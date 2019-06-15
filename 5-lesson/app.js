@@ -3,9 +3,10 @@ const chalk = require('chalk');
 const log = console.log;
 
 const greenMsg = chalk.green('Success!');
+const msg = chalk.blue.bgRed.bold('Hello world!');
 
 log(greenMsg);
-
+log(msg);
 //  Challenge: use the chalk library in your project
 // =================== 000 =================
 //  1. Install version 2.4.1 of chalk

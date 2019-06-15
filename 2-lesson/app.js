@@ -1,7 +1,8 @@
 const fs = require('fs');
 
-fs.writeFileSync('notes.txt', 'Hi I am Rayhan.');
+// fs.writeFileSync('notes.txt', 'Hi I am Rayhan.');
 
+fs.appendFileSync('notes.txt', "\nI live in bangladesh")
 
 //  Challenge: Append a message to notes.txt
 // =================== 000 =================

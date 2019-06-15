@@ -1,3 +1,10 @@
+const chalk = require('chalk');
+
+const log = console.log;
+
+const greenMsg = chalk.green('Success!');
+
+log(greenMsg);
 
 //  Challenge: use the chalk library in your project
 // =================== 000 =================

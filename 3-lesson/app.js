@@ -1,9 +1,15 @@
-const utils = require('./utils.js');
+const getNotes = require('./notes');
 
-const firstName = utils.name;
-const sum = utils.add(8,-2);
+const msg = getNotes();
+console.log(msg);
 
-console.log(sum);
+
+// const utils = require('./utils.js');
+
+// const firstName = utils.name;
+// const sum = utils.add(8,-2);
+
+// console.log(sum);
 
 // ========================== 000 =====================
 

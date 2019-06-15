@@ -1,1 +1,3 @@
-console.log('utils.js file')
+const name = "hasan";
+
+module.exports = {name};

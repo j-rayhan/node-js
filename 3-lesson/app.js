@@ -1,3 +1,6 @@
 const utils = require('./utils.js');
 
-console.log(utils.name);
+const firstName = utils.name;
+const sum = utils.add(8,-2);
+
+console.log(sum);

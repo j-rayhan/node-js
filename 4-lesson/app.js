@@ -12,10 +12,10 @@ yargs.command({
         }
     },
     handler: (argv) => {
-        console.log('PRINT IN %s=====>','Yargs Add command', argv);
+        console.log('PRINT IN %s=====>','Title : ', argv.title);
     }
 })
-// run node app.js add --title
+// run node app.js add --title="My title"
 // Out-Put Show the title type
 // create remove command
 yargs.command({

@@ -9,14 +9,20 @@ yargs.command({
             describe: 'Note Title',
             demandOption: true,
             type: 'string',
+        },
+        body: {
+            describe: 'Note body',
+            demandOption: true,
+            type: 'string',
         }
     },
     handler: (argv) => {
         console.log('PRINT IN %s=====>','Title : ', argv.title);
+        console.log('PRINT IN %s=====>','Body : ', argv.body);
     }
 })
-// run node app.js add --title="My title"
-// Out-Put Show the title type
+// run node app.js add --title="Buy" --body="These are what i need to buy"
+// Out-Put Show the Resust
 // create remove command
 yargs.command({
     command: 'remove',

@@ -47,4 +47,4 @@ yargs.command({
  *  node app.js read
  *  node app.js list
  */
-console.log(yargs.argv)
+yargs.parse();

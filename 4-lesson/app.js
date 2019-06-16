@@ -7,15 +7,16 @@ yargs.command({
     builder: {
         title: {
             describe: 'Note Title',
-            demandOption: true
+            demandOption: true,
+            type: 'string',
         }
     },
     handler: (argv) => {
         console.log('PRINT IN %s=====>','Yargs Add command', argv);
     }
 })
-// run node app.js add 
-// Out-Put Show the Error missing required argument: title
+// run node app.js add --title
+// Out-Put Show the title type
 // create remove command
 yargs.command({
     command: 'remove',

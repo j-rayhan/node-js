@@ -44,7 +44,11 @@ yargs.command({
     }
 })
 /**
- *  node app.js read
- *  node app.js list
+ *  Challenge: Add an option to yargs
+ * 
+ * 1. Setup a body option for the add command
+ * 2. Configure a description, make it require, and for it to be string
+ * 3. Log the body value in the handler function
+ * 4. Test your work!
  */
 yargs.parse();

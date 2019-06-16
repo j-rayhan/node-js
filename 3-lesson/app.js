@@ -16,12 +16,26 @@ yargs.command({
         console.log('PRINT IN %s=====>','Yargs Remove command',);
     }
 })
+
+// create list command
+yargs.command({
+    command: 'list',
+    describe: 'Listing out all notes',
+    handler: () => {
+        console.log('PRINT IN %s=====>','Yargs List command',);
+    }
+})
+
+// create read command
+yargs.command({
+    command: 'read',
+    describe: 'Read a note',
+    handler: () => {
+        console.log('PRINT IN %s=====>','Yargs Read command',);
+    }
+})
 /**
- *  Challenge: Add two new commands
- * 
- * 1. Setup command to support "list" command (print placeholder message for now)
- * 2. Setup command to support "read" command (print placeholder message for now)
- * 3. Test your work by running both commands and ensure correct output
- * 
+ *  node app.js read
+ *  node app.js list
  */
 console.log(yargs.argv)

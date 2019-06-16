@@ -1,12 +1,18 @@
 const yargs = require('yargs');
-const command = process.argv;
+
+// create add command
+yargs.command({
+    command: 'add',
+    describe: 'Add a new note',
+    handler: () => {
+        console.log('PRINT IN %s=====>','Yargs Add command',);
+    }
+})
 
 /**
- * Run this in Terminal to show more diff
- * node app.js --title="Hi I am Rayhan"
- * OR
- * node app.js Johir --title="Hi I am Rayhan"
+ * Run 
+ * node app.js --help
+ * node app.js --version
  * 
  */
-console.log('PRINT IN %s=====>','Process', command);
-console.log('PRINT IN %s=====>','Yargs',yargs.argv);
+console.log(yargs.argv)

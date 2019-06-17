@@ -5,6 +5,11 @@ const book = {
 
 const bookJson = JSON.stringify(book);
 
-console.log(bookJson);
+// console.log(bookJson);
 
-console.log(bookJson.title);
+// console.log(bookJson.title);
+
+const parseBook = JSON.parse(bookJson);
+
+console.log(parseBook.author);
+
